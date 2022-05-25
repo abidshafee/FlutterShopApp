@@ -5,15 +5,17 @@ class Product {
   final int price, size, id;
   final Color color;
   Product({
-    required this.image,
-    required this.title,
-    required this.description,
-    required this.price,
-    required this.size,
-    required this.id,
-    required this.color,
+    this.image,
+    this.title,
+    this.description,
+    this.price,
+    this.size,
+    this.id,
+    this.color,
   });
 }
+
+String productDesc = "This is a Product Description";
 
 List<Product> products = [
   Product(
@@ -23,7 +25,8 @@ List<Product> products = [
     price: 23,
     size: 7,
     image: "assets/images/p1.png"
-    color: Color(0xFF4A148C)),
+    color: const Color(0xFF4A148C)
+    ),
     Product(
     id: 2,
     title: "Product2",

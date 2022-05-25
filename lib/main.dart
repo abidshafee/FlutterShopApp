@@ -15,8 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Shop App',
-      theme: ThemeData(),
-      home: HomeScreen(),
+      theme: ThemeData(
+        textTheme: Theme.of(context).textTheme.apply(bodyColor: textColor),
+      ),
+      home: const HomeScreen(),
     );
   }
 }
